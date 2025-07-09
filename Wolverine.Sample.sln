@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.36105.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rabbit-mq", "rabbit-mq", "{3CC0E983-5961-4869-819C-11850EB5F31C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wolverine.RabbitMQ.Consumer", "src\rabbit-mq\Wolverine.RabbitMQ.Consumer\Wolverine.RabbitMQ.Consumer.csproj", "{1A33AE68-2F6E-4DEC-A631-FFDFEC69BF84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wolverine.RabbitMQ.Producer", "src\rabbit-mq\Wolverine.RabbitMQ.Producer\Wolverine.RabbitMQ.Producer.csproj", "{7DF5C012-0490-4DB1-9FEC-85D2C4C3677A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wolverine.Message", "src\Wolverine.Message\Wolverine.Message.csproj", "{7892BB69-DB1B-4E65-9891-021DEB2070A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wolverine.Api", "src\in-process\Wolverine.Api\Wolverine.Api.csproj", "{537C95D4-E607-41AA-A892-46858155023E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "in-process", "in-process", "{5661D725-8330-4D51-A9BB-F6F4B003877E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B6817D4E-FE2B-4BB9-BEB0-E3DAB8AD8EB8}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		rabbitmq-docker-compose.yml = rabbitmq-docker-compose.yml
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A33AE68-2F6E-4DEC-A631-FFDFEC69BF84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A33AE68-2F6E-4DEC-A631-FFDFEC69BF84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A33AE68-2F6E-4DEC-A631-FFDFEC69BF84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A33AE68-2F6E-4DEC-A631-FFDFEC69BF84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DF5C012-0490-4DB1-9FEC-85D2C4C3677A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DF5C012-0490-4DB1-9FEC-85D2C4C3677A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DF5C012-0490-4DB1-9FEC-85D2C4C3677A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DF5C012-0490-4DB1-9FEC-85D2C4C3677A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7892BB69-DB1B-4E65-9891-021DEB2070A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7892BB69-DB1B-4E65-9891-021DEB2070A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7892BB69-DB1B-4E65-9891-021DEB2070A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7892BB69-DB1B-4E65-9891-021DEB2070A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{537C95D4-E607-41AA-A892-46858155023E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{537C95D4-E607-41AA-A892-46858155023E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{537C95D4-E607-41AA-A892-46858155023E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{537C95D4-E607-41AA-A892-46858155023E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3CC0E983-5961-4869-819C-11850EB5F31C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{1A33AE68-2F6E-4DEC-A631-FFDFEC69BF84} = {3CC0E983-5961-4869-819C-11850EB5F31C}
+		{7DF5C012-0490-4DB1-9FEC-85D2C4C3677A} = {3CC0E983-5961-4869-819C-11850EB5F31C}
+		{7892BB69-DB1B-4E65-9891-021DEB2070A4} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{537C95D4-E607-41AA-A892-46858155023E} = {5661D725-8330-4D51-A9BB-F6F4B003877E}
+		{5661D725-8330-4D51-A9BB-F6F4B003877E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2700BD52-CF37-492B-A01C-F783910B0279}
+	EndGlobalSection
+EndGlobal
